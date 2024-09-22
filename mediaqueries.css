@@ -1,0 +1,272 @@
+@media screen and (max-width: 1400px) {
+  #homepage {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+  
+  .project-item {
+      flex: 1 1 calc(20% - 1rem); /* 5 items in a row */
+      max-width: calc(20% - 1rem);
+    }
+    .section__pic-container {
+      width: 75px;
+      height: 275px;
+      margin: 0 auto 2rem;
+      align-items: center;
+    }
+  
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  .exp-container {
+    flex: 1 1 calc(100% - 2rem); /* Two containers per row */
+    max-width: calc(100% - 2rem);
+  }
+  #homepage,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 400px;
+    margin: 0 auto 2rem;
+  }
+  .section__pic-container_1 {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+  .about-containers {
+    margin-top: 0;
+  }
+  .slider img {
+    object-fit: contain; /* Make sure the image fits well on tablets */
+  }
+  /* Adjust logo size for tablet screens */
+  .logo img {
+    width: 120px; /* Adjust size for tablets */
+    padding: 5px;
+    margin: 0 15px;
+  }
+  .project-item {
+      flex: 1 1 calc(33.33% - 1rem); /* 3 items in a row */
+      max-width: calc(33.33% - 1rem);
+    }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  #homepage {
+    height: 83vh;
+    margin-bottom: 0;
+    margin-top: 2rem;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add some padding for spacing */
+  }
+
+  .hamburger-icon {
+    margin-left: auto; /* Push hamburger icon to the right */
+  }
+
+  body {
+    text-align: center;
+  }
+
+  /* Adjust exp-container for mobile */
+  .exp-container {
+    flex: 1 1 100%; /* Single container per row */
+    max-width: 100%; /* Ensure full width */
+    padding: 1rem; /* Add padding around the container */
+    border: 0.1rem solid rgb(100, 2, 2); /* Ensure border is visible */
+    box-sizing: border-box; /* Ensure padding and border are included in size */
+    
+  }
+
+  /* Adjust font size for article */
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  /* Adjust experience-sub-title for mobile */
+  .experience-sub-title {
+    font-size: 1.25rem; /* Smaller font for mobile */
+  }
+
+  /* Adjust logo size for mobile */
+  .logo {
+    font-size: 1.5rem;
+  }
+  .text-container{
+    text-align: justify;
+    -webkit-text-fill-color: #083746;
+    font-weight: 500;
+    font-size: medium;
+    
+}
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 100vw;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Ensure two items in a row for project items */
+  .project-item {
+    flex: 1 1 calc(50% - 1rem); /* 2 items in a row */
+    max-width: calc(50% - 1rem);
+  }
+
+  .section__pic-container_1 .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    justify-content: center;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+  /* Adjust logo size for mobile screens */
+  .logo img {
+    width: 80px; /* Smaller logo for mobile */
+    padding: 5px;
+    margin: 0 10px;
+  }
+
+  .slider img {
+    object-fit: contain; /* Ensure the entire image is visible */
+    width: 100%; /* Make the image take up the full width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+  }
+}
+
+/* For phones in landscape mode */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  .container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center the slider inside the wrapper */
+}
+  .slider {
+    max-height: 50vh; /* Limit the height of the slider to prevent it from being too tall */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+  }
+
+  .slider img {
+    object-fit: contain; /* Make sure the entire image is visible */
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Ensure image is centered */
+  }
+}
+
+/* For iPads and larger devices in portrait or landscape */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center the slider inside the wrapper */
+}
+  .slider {
+    max-height: 60vh; /* Adjust for larger screens */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+  }
+
+  .slider img {
+    object-fit: contain; /* Ensure images fit without cropping */
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Ensure image is centered */
+  }
+}
